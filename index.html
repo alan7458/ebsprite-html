@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>ebsprite Control</title>
+    <title>ebsprite-html</title>
     <style>
         body {
             margin: 0;
@@ -34,7 +34,7 @@
         <button id="changeSprite">Change Sprite</button>
     </div>
 
-    <script src="ebsprite.js"></script>
+    <script src="ebsprite.min.js"></script>
     <script>
         ebsprite.start(0); // ness
 
@@ -45,6 +45,8 @@
                 ebsprite.start(id);
             }
         });
+
+        spriteData.forEach((s, i)=> console.log(i, s.name))
     </script>
 
 </body>
